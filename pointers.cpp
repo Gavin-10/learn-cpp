@@ -21,5 +21,29 @@ int main() {
 
   std::cout << *p_myNum << std::endl;
 
+  //String literal initialization
+  //turns into array, then holds pointer
+  const char* p_message {"Hello There"};
+
+  std::cout << p_message << std::endl;
+
+  //Never initialize pointer to bs data. Possible data corruption
+  //NEVER use uninitialized pointer
+  //stack memory lifecycle isnt controlled by program
+  //Heap memory is however
+
+  //memory put on heap
+  //you can access this outside of usual scope
+  int* p_myVar {new int};
+
+  //deinitialize
+  delete p_myNum;
+  p_myVar = nullptr;
+
+  //do not call delete twice (bad)
+  //хрен знает то что происходится
+
+
+
   return 0;
 }
