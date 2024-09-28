@@ -43,7 +43,5 @@ int main() {
   //do not call delete twice (bad)
   //хрен знает то что происходится
 
-
-
   return 0;
 }
