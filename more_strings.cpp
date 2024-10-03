@@ -48,6 +48,33 @@ int main() {
   char *output = std::strrchr(input, '/');
   std::cout << ++output << std::endl;
 
+  //Concatenation
+
+  char words1[50] = "Hello ";
+  char words2[50] = "There";
+
+  //make sure destination string is big enough
+
+  std::strcat(words1, words2);
+  std::strcat(words1, " Good bye");
+  std::cout << words1 << std::endl;
+
+  char moreWords[50] = "Hello There ";
+  char evenMoreWords[50] = "Good bye";
+
+  std::strncat(moreWords, evenMoreWords, 4);
+  std::cout << moreWords << std::endl;
+
+  //copying strings
+
+  char *dest = new char[std::strlen(moreWords) + 1] {'H', 'e', 'l', 'l', 'o'};
+  std::strcpy(dest, moreWords);
+  std::cout << dest << std::endl;
+
+  char *dest2 = new char[50];
+
+  std::strncpy(dest2, moreWords, 11);
+  std::cout << dest2 << std::endl;
 
   
   return 0;
