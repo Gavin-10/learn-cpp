@@ -12,6 +12,7 @@ class Person {
   public:
     Person();
     Person(std::string_view p_fullname, int p_age, std::string_view p_address);
+    Person(const Person& person);
     ~Person();
 
     std::string getFullName() const {

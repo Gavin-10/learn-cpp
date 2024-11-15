@@ -10,6 +10,12 @@ Engineer::Engineer(std::string_view p_fullname, int p_age, std::string_view p_ad
   std::cout << "Engineer Constructor Called" << std::endl;
 }
 
+Engineer::Engineer(const Engineer& engineer)
+  : Person(engineer), contractCount(engineer.contractCount ) {
+
+  std::cout << "Engineer Copy Constructor Called" << std::endl;
+}
+
 Engineer::~Engineer() {
 
 }

@@ -10,6 +10,12 @@ Person::Person(std::string_view p_fullname, int p_age, std::string_view p_addres
   std::cout << "Person Constructor Called" << std::endl;
 }
 
+Person::Person(const Person& person)
+  : fullName(person.fullName), age(person.age), address(person.address) {
+
+  std::cout << "Person Copy Constructor Called" << std::endl;
+}
+
 Person::~Person() {
 
 }

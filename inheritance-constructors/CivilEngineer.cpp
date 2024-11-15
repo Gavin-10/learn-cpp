@@ -10,6 +10,12 @@ CivilEngineer::CivilEngineer(std::string_view p_fullname, int p_age, std::string
   std::cout << "CivilEngineer Constructor Called" << std::endl;
 }
 
+CivilEngineer::CivilEngineer(const CivilEngineer& ce)
+  : Engineer(ce), clientCount(ce.clientCount) {
+
+  std::cout << "CivilEngineer Copy Constructor Called" << std::endl;
+}
+
 CivilEngineer::~CivilEngineer() {
 
 }

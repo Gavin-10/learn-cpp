@@ -14,6 +14,7 @@ class Engineer : public Person {
   public:
     Engineer();
     Engineer(std::string_view p_fullname, int p_age, std::string_view p_address, int p_contracts);
+    Engineer(const Engineer& engineer);
     ~Engineer();
 
   protected:
