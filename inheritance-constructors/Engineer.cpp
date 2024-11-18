@@ -1,8 +1,10 @@
 #include "Engineer.h"
 
+/*
 Engineer::Engineer() {
   std::cout << "Default called on Engineer" << std::endl;
 }
+*/
 
 Engineer::Engineer(std::string_view p_fullname, int p_age, std::string_view p_address, int p_contracts)
   : Person(p_fullname, p_age, p_address), contractCount(p_contracts) {

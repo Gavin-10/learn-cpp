@@ -9,10 +9,12 @@
 
 class Engineer : public Person {
 
+  using Person::Person;
+
   friend std::ostream& operator << (std::ostream& out, const Engineer& e);
 
   public:
-    Engineer();
+    //Engineer(); no longer needed
     Engineer(std::string_view p_fullname, int p_age, std::string_view p_address, int p_contracts);
     Engineer(const Engineer& engineer);
     ~Engineer();
