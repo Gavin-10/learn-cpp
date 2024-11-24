@@ -13,7 +13,12 @@ int main() {
 
   for (auto shape : shapes) {
     shape->draw();
+
   }
+
+  //Note slicing
+  Shape s = o1;
+  s.draw();
 
   return 0;
 }
