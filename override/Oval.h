@@ -12,7 +12,7 @@ class Oval : public Shape {
     Oval(double, double, std::string_view);
     ~Oval() = default;
 
-    virtual void draw() const;
+    virtual void draw() const override;
 
   protected:
     double getXRad() const {

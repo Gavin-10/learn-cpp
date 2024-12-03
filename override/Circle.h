@@ -13,7 +13,7 @@ class Circle : public Oval {
     Circle(std::string_view);
     ~Circle() = default;
 
-    virtual void draw() const;
+    virtual void draw() const override;
 
 };
 
