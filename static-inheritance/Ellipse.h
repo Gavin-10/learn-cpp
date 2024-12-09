@@ -14,7 +14,7 @@ class Ellipse : public Shape {
         ~Ellipse() = default;
 
 
-        virtual int getCount() const override {
+        int getCount() const override {
             return m_count;
         }
 
