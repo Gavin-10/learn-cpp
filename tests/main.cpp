@@ -31,7 +31,6 @@ int main()
     n.a = 3;
     n.b = 4;
     genNode(&n);
-    double pi = 3.1415926535;
     std::cout << n.n->a << std::endl;
     return 0;
 }
