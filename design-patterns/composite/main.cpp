@@ -17,5 +17,13 @@ int main() {
 
     std::cout << b3->getTotal() << std::endl;
 
+    delete p1;
+    delete p2;
+    delete p3;
+    delete p4;
+    delete b1;
+    delete b2;
+    delete b3;
+
     return 0;
 }
